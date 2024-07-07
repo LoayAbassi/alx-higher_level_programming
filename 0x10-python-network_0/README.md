@@ -29,3 +29,6 @@ a subdomain is like test in test.google.com
 
 HTTPS encrypts data being exchanged
 5xx, stands for server error status codes
+
+======= bash ================================================================
+when taking argument use $1 for 1st, $2 for 2nd ...
