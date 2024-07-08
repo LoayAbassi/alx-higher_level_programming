@@ -1,0 +1,2 @@
+if a list is empty it's not will return True
+find_peak = __import__('6-peak').find_peak
