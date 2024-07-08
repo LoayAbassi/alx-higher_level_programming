@@ -20,7 +20,8 @@ the -b option is useful for scenarios where you need to interact with web applic
 -d // used to sendd data in the body of http request
 [curl -d "username=user1&password=pass123" http://example.com/login]
 
--H // sets http header to specific value
+-H "headerVar : value" // sets http header to specific value (before each new var)
+
 
 ======= HTTP ================================================================
 default port number is 80 // it depends on the protocol used (afp = 548)
@@ -35,3 +36,8 @@ when taking argument use $1 for 1st, $2 for 2nd ...
 grep word is a filter that takes only lines with 'word' key
 to have substrings , u can use cut d 'separation_base' -fstart-
 // -f index1,index2 will get specified elements
+
+
+
+
+0.0.0.0:5000/route_
