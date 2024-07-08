@@ -32,3 +32,6 @@ HTTPS encrypts data being exchanged
 
 ======= bash ================================================================
 when taking argument use $1 for 1st, $2 for 2nd ...
+grep word is a filter that takes only lines with 'word' key
+to have substrings , u can use cut d 'separation_base' -fstart-
+// -f index1,index2 will get specified elements
