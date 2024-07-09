@@ -26,6 +26,8 @@ it's possible to use it indecating the type of data being sent //-H "Content-Typ
 -o /dev/null // discards the body of the curl command
 -w "%{http_code}\n" // tells the curl to write only the status code followed by newline
 
+-I // fetches the header of response
+
 ======= HTTP ================================================================
 default port number is 80 // it depends on the protocol used (afp = 548)
 if port number specified(google.com : 8080), then default is ignored
