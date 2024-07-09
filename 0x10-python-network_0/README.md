@@ -21,6 +21,7 @@ the -b option is useful for scenarios where you need to interact with web applic
 [curl -d "username=user1&password=pass123" http://example.com/login]
 
 -H "headerVar : value" // sets http header to specific value (before each new var)
+it's possible to use it indecating the type of data being sent //-H "Content-Type: application/json"
 
 -o /dev/null // discards the body of the curl command
 -w "%{http_code}\n" // tells the curl to write only the status code followed by newline
