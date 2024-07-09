@@ -22,6 +22,8 @@ the -b option is useful for scenarios where you need to interact with web applic
 
 -H "headerVar : value" // sets http header to specific value (before each new var)
 
+-o /dev/null // discards the body of the curl command
+-w "%{http_code}\n" // tells the curl to write only the status code followed by newline
 
 ======= HTTP ================================================================
 default port number is 80 // it depends on the protocol used (afp = 548)
@@ -37,7 +39,4 @@ grep word is a filter that takes only lines with 'word' key
 to have substrings , u can use cut d 'separation_base' -fstart-
 // -f index1,index2 will get specified elements
 
-
-
-
-0.0.0.0:5000/route_
+0.0.0.0:5000/route\_
