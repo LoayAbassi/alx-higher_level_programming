@@ -7,5 +7,3 @@ if __name__ == "__main__" :
     request = urllib.request.Request(url)
     with urllib.request.urlopen(request) as response : 
         print(response.headers["X-Request-Id"])
-
-
