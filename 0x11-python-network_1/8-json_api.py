@@ -6,12 +6,12 @@ If no argument is given, set q=""
 If the response body is properly JSON formatted and not empty, display the id and name like this: [<id>] <name>
 Otherwise:
 Display Not a valid JSON if the JSON is invalid
-Display No result if the JSON is empty""" 
+Display No result if the JSON is empty"""
 
 if __name__ == "__main__":
     import requests
     import sys
-    if len(sys.argv)<2 : 
+    if len(sys.argv) < 2:
         q = ""
     else:
         q = sys.argv[1]
