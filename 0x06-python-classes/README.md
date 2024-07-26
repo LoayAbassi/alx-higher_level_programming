@@ -33,3 +33,18 @@ _atr : protected
 isinstance(var, type) //returns true if var's type is
                         the same as type in arg
 
+# getters and setters exist here too 
+    # 1st method
+    def get_attr(self):
+        return self.__attr
+    def set_attr(self,val):
+        self.__attr = val
+
+    #2nd method
+    @property
+    def attr(self):
+        return self.__attr
+    @attr.setter
+    def attr(self,val):
+        self.__attr = val
+
