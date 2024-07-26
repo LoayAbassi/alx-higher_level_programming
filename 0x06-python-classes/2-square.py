@@ -5,17 +5,20 @@ Descriptiont
     Module that defines a Square class.
     
 """
+
+
 class Square:
     """
     A class that defines a square.
 
     Attributes:
         __size (int): The size of the square.
-    
+
     Methods:
         __init__(self, size = 0): initializes the square with a given size.
 
     """
+
     def __init__(self, size=0):
         """_summary_
 
