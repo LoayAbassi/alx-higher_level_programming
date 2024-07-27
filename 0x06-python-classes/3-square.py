@@ -7,6 +7,7 @@ Description:
     and methods to initialize the size and calculate the area of the square.
 """
 
+
 class Square:
     """
     A class representing a square.

@@ -8,6 +8,7 @@ Description:
     using property decorators.
 """
 
+
 class Square:
     """
     A class representing a square.
