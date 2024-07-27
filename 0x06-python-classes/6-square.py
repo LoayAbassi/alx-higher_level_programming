@@ -3,10 +3,13 @@
 1-square.py
 
 Description:
-    This module defines a Square class with private instance attributes `size` and `position`,
-    methods to initialize the size and position, calculate the area, manage the size and position
+    This module defines a Square class with private instance 
+    attributes `size` and `position`,
+    methods to initialize the size and position,
+    calculate the area, manage the size and position
     attributes using property decorators, and print the square.
 """
+
 
 
 class Square:
@@ -15,10 +18,12 @@ class Square:
 
     Attributes:
         __size (int): The size of the square. It is a private attribute.
-        __position (tuple): The position of the square. It is a private attribute.
+        __position (tuple): The position of the square.
+                            It is a private attribute.
 
     Methods:
-        __init__(self, size=0, position=(0, 0)): Initializes the square with a given size and position.
+        __init__(self, size=0, position=(0, 0)):Initializes the square
+                                        with a given size and position.
         area(self): Calculates the area of the square.
         size(self): Gets the size of the square.
         size(self, value): Sets the size of the square.
@@ -36,7 +41,8 @@ class Square:
             position (tuple): The position of the square. Default is (0, 0).
 
         Raises:
-            TypeError: If `size` is not an integer or `position` is not a tuple of 2 positive integers.
+            TypeError: If `size` is not an integer or `position` is not a
+                tuple of 2 positive integers.
             ValueError: If `size` is less than 0.
         """
         if not isinstance(size, int):
@@ -113,6 +119,8 @@ class Square:
             raise TypeError("position must be a tuple of 2 positive integers")
         elif len(value) != 2:
             raise TypeError("position must be a tuple of 2 positive integers")
+        elif not (isinstance(value[0], int) and isinstance(value[1], int)):
+            raise TypeError("position must be a tuple of 2 positive integers")
         elif value[0] < 0 or value[1] < 0:
             raise TypeError("position must be a tuple of 2 positive integers")
 
@@ -120,8 +128,10 @@ class Square:
 
     def my_print(self):
         """
-        Prints the square using `#` characters. If the size is 0, it prints an empty line.
-        The square is printed with the specified position (leading spaces and new lines).
+        Prints the square using `#` characters. If the size is 0,
+        it prints an empty line.
+        The square is printed with the specified position
+        (leading spaces and new lines).
 
         """
         if self.__size == 0:
