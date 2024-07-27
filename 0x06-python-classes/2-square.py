@@ -3,7 +3,6 @@
 2-square.py
 Descriptiont
     Module that defines a Square class.
-    
 """
 
 

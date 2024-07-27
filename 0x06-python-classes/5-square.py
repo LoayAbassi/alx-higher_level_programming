@@ -3,9 +3,10 @@
 1-square.py
 
 Description:
-    This module defines a Square class with a private instance attribute `size`,
-    methods to initialize the size, calculate the area, manage the size attribute
-    using property decorators, and print the square.
+    This module defines a Square class with a private instance
+    attribute `size', methods to initialize the size, calculate
+    the area, manage the size attribute using property
+    decorators, and print the square.
 """
 
 
@@ -81,7 +82,8 @@ class Square:
 
     def my_print(self):
         """
-        Prints the square using `#` characters. If the size is 0, it prints an empty line.
+        Prints the square using `#` characters. If the size is 0,
+        it prints an empty line.
         """
         if self.__size == 0:
             print()
