@@ -3,7 +3,7 @@
 1-square.py
 
 Description:
-    This module defines a Square class with private instance 
+    This module defines a Square class with private instance
     attributes `size` and `position`,
     methods to initialize the size and position,
     calculate the area, manage the size and position
