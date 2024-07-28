@@ -17,8 +17,9 @@ attr2 = "hi"
 use __str__(self) method with a return value inside it
 
 __lt__ (Less Than <): #checks if the current class< other class and assigns it to class
-    return self.area() < other.area()
-
+    if isinstance(other, Square):
+        return self.area() < other.area()
+    return NotImplemented
 __le__ (Less Than or Equal To <=): #same as top
 
 __gt__ (Greater Than >):#same as top
