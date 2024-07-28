@@ -40,8 +40,54 @@ class Square:
             raise ValueError("size must be >= 0")
 
         self.__size = size
-    def __int__(self):
-        return self.__
+
+    def __lt__(self, other):
+        """
+        Checks if this square is less than another square based on area.
+
+        Args:
+            other (Square): Another square to compare with.
+
+        Returns:
+            bool: True if this square's area is less than the other's area, False otherwise.
+        """
+        return self.area() < other.area()
+
+    def __le__(self, other):
+        """
+        Checks if this square is less than or equal to another square based on area.
+
+        Args:
+            other (Square): Another square to compare with.
+
+        Returns:
+            bool: True if this square's area is less than or equal to the other's area, False otherwise.
+        """
+        return self.area() <= other.area()
+
+    def __gt__(self, other):
+        """
+        Checks if this square is greater than another square based on area.
+
+        Args:
+            other (Square): Another square to compare with.
+
+        Returns:
+            bool: True if this square's area is greater than the other's area, False otherwise.
+        """
+        return self.area() > other.area()
+
+    def __ge__(self, other):
+        """
+        Checks if this square is greater than or equal to another square based on area.
+
+        Args:
+            other (Square): Another square to compare with.
+
+        Returns:
+            bool: True if this square's area is greater than or equal to the other's area, False otherwise.
+        """
+        return self.area() >= other.area()
 
     def area(self):
         """

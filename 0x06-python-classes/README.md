@@ -16,6 +16,15 @@ attr2 = "hi"
 # assigning a return value to an object
 use __str__(self) method with a return value inside it
 
+__lt__ (Less Than <): #checks if the current class< other class and assigns it to class
+    return self.area() < other.area()
+
+__le__ (Less Than or Equal To <=): #same as top
+
+__gt__ (Greater Than >):#same as top
+
+__ge__ (Greater Than or Equal To >=):#same as top
+
 # using it
 
 from fileName import className
