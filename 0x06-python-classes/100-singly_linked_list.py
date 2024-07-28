@@ -3,10 +3,10 @@
 100-singly_linked_list.oy
 Description:
 This module contains the definition of a singly linked list.
-a class node that defines a single node's elements and a singlyLinkedList 
-class that defines the linked list itself and do the adding of elements.
+a class node that defines a single node's elements and a singlyLinkedList
+class that defines the linked list itself and do the adding of elements."""
 
-"""
+
 class Node:
     """
     Represents a node in a singly linked list.
@@ -15,13 +15,14 @@ class Node:
         __data (int): The data stored in the node.
         __next_node (Node or None): The reference to the next node in the list.
     """
+
     def __init__(self, data, next_node=None):
         """
         Initializes a new node with given data and next_node reference.
 
         Args:
             data (int): The data to store in the node.
-            next_node (Node or None): The next node in the list (default is None).
+            next_node: The next node in the list (default is None).
         """
         self.__next_node = next_node
         self.__data = data
@@ -57,7 +58,8 @@ class Node:
         Gets the reference to the next node.
 
         Returns:
-            Node or None: The next node in the list or None if there is no next node.
+            Node or None: The next node in the list
+            or None if there is no next node.
         """
         return self.__next_node
 
@@ -84,6 +86,7 @@ class SinglyLinkedList:
     Attributes:
         __head (Node or None): The head node of the linked list.
     """
+
     def __init__(self):
         """
         Initializes an empty singly linked list.
@@ -106,12 +109,14 @@ class SinglyLinkedList:
 
     def sorted_insert(self, value):
         """
-        Inserts a new node into the correct sorted position in the list (increasing order).
+        Inserts a new node into the correct sorted
+        position in the list (increasing order).
 
         Args:
             value (int): The data to be inserted into the list.
 
-        The new node is inserted such that the list remains sorted in ascending order.
+        The new node is inserted such that the list
+        remains sorted in ascending order.
         """
         new_node = Node(value)
         if self.__head is None or self.__head.data >= value:
@@ -119,7 +124,9 @@ class SinglyLinkedList:
             self.__head = new_node
         else:
             current = self.__head
-            while current.next_node is not None and current.next_node.data < value:
+            x = current.next_node.data < value
+            while current.next_node is not None and x:
                 current = current.next_node
+                x = current.next_node.data < value
             new_node.next_node = current.next_node
             current.next_node = new_node
