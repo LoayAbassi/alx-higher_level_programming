@@ -6,9 +6,7 @@ Description:
     This module defines a Square class with a private instance
     attribute `size`,methods to initialize the size,
     calculate the area, and manage the size attribute
-    using property decorators.
-"""
-
+    using property decorators."""
 
 
 class Square:
