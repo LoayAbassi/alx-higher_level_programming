@@ -133,7 +133,21 @@ class Square:
 
         self.__position = value
     def __str__(self):
-        
+        x = ""
+        if self.__size == 0:
+            x=""
+        else:
+            for p in range(self.position[1]):
+                x=x+"\n"
+            for height in range(self.size):
+                x=x+" "*self.position[0]
+                for width in range(self.size):
+                    print("#", end="")
+                    x = x+"#"
+                x=x+"\n"
+
+        return x
+
     def my_print(self):
         """
         Prints the square using `#` characters. If the size is 0,

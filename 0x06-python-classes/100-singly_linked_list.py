@@ -93,7 +93,6 @@ class SinglyLinkedList:
         """
         Initializes an empty singly linked list.
         """
-        
         self.__head = None
 
     def __str__(self):
@@ -127,9 +126,9 @@ class SinglyLinkedList:
             self.__head = new_node
         else:
             current = self.__head
-            x = current.next_node.data < value
-            while current.next_node is not None and x:
+            is_less = current.next_node is not None and current.next_node.data < value
+            while is_less:
                 current = current.next_node
-                x = current.next_node.data < value
+                is_less = current.next_node is not None and current.next_node.data < value
             new_node.next_node = current.next_node
             current.next_node = new_node
