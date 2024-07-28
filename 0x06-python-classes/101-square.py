@@ -132,16 +132,16 @@ class Square:
             raise TypeError("position must be a tuple of 2 positive integers")
 
         self.__position = value
+
     def __str__(self):
         x = ""
         if self.__size == 0:
-            x=""
+            x = ""
         else:
             for p in range(self.position[1]):
-                x=x+"\n"
+                x = x+"\n"
             for height in range(self.size):
-                x=x+" "*self.position[0]+"#"*self.size+"\n"
-                
+                x = x+" "*self.position[0]+"#"*self.size+"\n"
 
         return x[:len(x)-1]
 
