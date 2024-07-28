@@ -1,5 +1,12 @@
 #!/usr/bin/python3
+"""
+100-singly_linked_list.oy
+Description:
+This module contains the definition of a singly linked list.
+a class node that defines a single node's elements and a singlyLinkedList 
+class that defines the linked list itself and do the adding of elements.
 
+"""
 class Node:
     """
     Represents a node in a singly linked list.
