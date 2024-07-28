@@ -1,9 +1,8 @@
 #!/usr/bin/python3
 """
 2-square.py
-Descriptiont
-    Module that defines a Square class.
-"""
+Description:
+Module that defines a Square class."""
 
 
 class Square:
