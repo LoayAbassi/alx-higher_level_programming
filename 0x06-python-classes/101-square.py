@@ -140,13 +140,10 @@ class Square:
             for p in range(self.position[1]):
                 x=x+"\n"
             for height in range(self.size):
-                x=x+" "*self.position[0]
-                for width in range(self.size):
-                    print("#", end="")
-                    x = x+"#"
-                x=x+"\n"
+                x=x+" "*self.position[0]+"#"*self.size+"\n"
+                
 
-        return x
+        return x[:len(x)-1]
 
     def my_print(self):
         """

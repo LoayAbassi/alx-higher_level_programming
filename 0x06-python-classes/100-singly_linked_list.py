@@ -24,8 +24,7 @@ class Node:
             data (int): The data to store in the node.
             next_node: The next node in the list (default is None).
         """
-        if not isinstance(data, int):
-            raise TypeError("data must be an integer")
+        
         self.__next_node = next_node
         self.__data = data
 
@@ -93,6 +92,7 @@ class SinglyLinkedList:
         """
         Initializes an empty singly linked list.
         """
+        
         self.__head = None
 
     def __str__(self):
@@ -126,9 +126,9 @@ class SinglyLinkedList:
             self.__head = new_node
         else:
             current = self.__head
-            is_less = current.next_node is not None and current.next_node.data < value
-            while is_less:
+            x = current.next_node.data < value
+            while current.next_node is not None and x:
                 current = current.next_node
-                is_less = current.next_node is not None and current.next_node.data < value
+                x = current.next_node.data < value
             new_node.next_node = current.next_node
             current.next_node = new_node
