@@ -13,6 +13,9 @@ attr2 = "hi"
     def meth1(self):
         code here
 
+# assigning a return value to an object
+use __str__(self) method with a return value inside it
+
 # using it
 
 from fileName import className

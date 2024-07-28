@@ -24,8 +24,7 @@ class Node:
             data (int): The data to store in the node.
             next_node: The next node in the list (default is None).
         """
-        if not isinstance(data, int):
-            raise TypeError("data must be an integer")
+        
         self.__next_node = next_node
         self.__data = data
 
