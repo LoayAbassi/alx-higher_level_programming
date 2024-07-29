@@ -129,6 +129,3 @@ class Rectangle:
             for i in range(self.height):
                 x = x+"#"*self.width+"\n"
         return x[:len(x)-1]
-    
-    def __repr__(self):
-        return "Rectangle({self.width}, {self.height})"
