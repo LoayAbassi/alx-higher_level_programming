@@ -23,3 +23,6 @@ class C_Name :
 
 # static methods
 @staticmethod decorator
+
+# class methods
+@classmethod
