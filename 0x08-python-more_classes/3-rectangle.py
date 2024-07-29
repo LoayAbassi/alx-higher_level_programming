@@ -1,9 +1,10 @@
 #!/usr/bin/python3
 """
-2-rectangle.py
+3-rectangle.py
 Description:
 This module contains a class that defines a rectangle with
 getters and setters for the width and height.
+perimeter and area claculation, along with string representation.
 """
 
 
@@ -121,3 +122,10 @@ class Rectangle:
         if self.__width == 0 or self.height == 0:
             return 0
         return 2 * (self.__width + self.__height)
+
+    def __str__(self):
+        x = ""
+        if not (self.height == 0 or self.width == 0):
+            for i in range(self.height):
+                x = x+"#"*self.width+"\n"
+        return x[:len(x)-1]

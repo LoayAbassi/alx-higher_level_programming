@@ -4,6 +4,7 @@
 Description:
 This module contains a class that defines a rectangle with
 getters and setters for the width and height.
+also area and perimeter calculation.
 """
 
 
