@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-4-rectangle.py
+-rectangle.py
 Description:
 This module contains a class that defines a rectangle with
 getters and setters for the width and height.
@@ -141,3 +141,5 @@ class Rectangle:
     def __del__(self):
         """prints a message when rectangle is destroyed"""
         print("Bye rectangle...")
+
+    
