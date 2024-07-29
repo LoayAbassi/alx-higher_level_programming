@@ -135,7 +135,7 @@ class Rectangle:
         return x[:len(x)-1]
 
     def __repr__(self):
-        
+        """returns a representation of the object"""
         return f"Rectangle({self.width}, {self.height})"
 
     def __del__(self):
