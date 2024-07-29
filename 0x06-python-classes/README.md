@@ -26,6 +26,12 @@ __gt__ (Greater Than >):#same as top
 
 __ge__ (Greater Than or Equal To >=):#same as top
 
+# destruction
+def __del__(self):
+    print(f"Object with value {self.value} is being destroyed")
+obj = Class(para)
+use it : del obj
+
 # using it
 
 from fileName import className
