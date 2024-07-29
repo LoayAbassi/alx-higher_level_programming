@@ -1,10 +1,11 @@
 #!/usr/bin/python3
 """
-3-rectangle.py
+4-rectangle.py
 Description:
 This module contains a class that defines a rectangle with
 getters and setters for the width and height.
 perimeter and area claculation, along with string representation.
+and possibility to recreate the instance using eval()
 """
 
 
@@ -132,6 +133,11 @@ class Rectangle:
             for i in range(self.height):
                 x = x+"#"*self.width+"\n"
         return x[:len(x)-1]
-    
-    def __repr__(self) :
-        return "Rectangle({:d}, {:d})".format(self.width,self.height)
+
+    def __repr__(self):
+        
+        return f"Rectangle({self.width}, {self.height})"
+
+    def __del__(self):
+        """prints a message when rectangle is destroyed"""
+        print("Bye rectangle...")

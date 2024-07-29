@@ -135,4 +135,5 @@ class Rectangle:
         return x[:len(x)-1]
 
     def __repr__(self):
+        """returns a representation of object"""
         return f"Rectangle({self.width}, {self.height})"
