@@ -5,7 +5,7 @@ Description:
 This module contains a class that defines a rectangle with
 getters and setters for the width and height.
 perimeter and area claculation, along with string representation.
-and possibility to recreate the instance using eval() function
+and possibility to recreate the instance using eval()
 """
 
 
@@ -135,8 +135,4 @@ class Rectangle:
         return x[:len(x)-1]
 
     def __repr__(self):
-        """
-        returns a string that could be
-        used to recreate the rectangle.
-        """
-        return "Rectangle({self.width}, {self.height})"
+        return f"Rectangle({self.width}, {self.height})"
