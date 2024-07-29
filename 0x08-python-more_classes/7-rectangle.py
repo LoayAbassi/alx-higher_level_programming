@@ -7,6 +7,8 @@ getters and setters for the width and height.
 perimeter and area claculation, along with string representation.
 and possibility to recreate the instance using eval()
 counts number of times the class was initialized
+print_symbol(str): contains the symbol used for printing R.
+
 """
 
 
@@ -26,6 +28,7 @@ class Rectangle:
                         that can be used to recreate the instance.
         __del__() : prints a message when rectangle destroyed """
     number_of_instances = 0
+    print_symbol = "#"
 
     def __init__(self, width=0, height=0):
         """
@@ -137,7 +140,7 @@ class Rectangle:
         x = ""
         if not (self.height == 0 or self.width == 0):
             for i in range(self.height):
-                x = x+"#"*self.width+"\n"
+                x = x+str(self.print_symbol)*self.width+"\n"
         return x[:len(x)-1]
 
     def __repr__(self):
@@ -146,4 +149,5 @@ class Rectangle:
 
     def __del__(self):
         """prints a message when rectangle is destroyed"""
+        Rectangle.number_of_instances -= 1
         print("Bye rectangle...")
