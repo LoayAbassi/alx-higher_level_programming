@@ -2,7 +2,7 @@
 """
 1-rectangle.py
 Description:
-This module contains a class that defines a rectangle with 
+This module contains a class that defines a rectangle with
 getters and setters for the width and height.
 """
 
