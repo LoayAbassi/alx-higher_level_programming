@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-6-rectangle.py
+7-rectangle.py
 Description:
 This module contains a class that defines a rectangle with
 getters and setters for the width and height.
@@ -11,7 +11,6 @@ counts number of times the class was initialized
 
 
 class Rectangle:
-    number_of_instances = 0
     """
     A simple class that defines a rectangle.
 
@@ -26,6 +25,7 @@ class Rectangle:
         __repr__() ->str: Returns a string representation of the rectangle
                         that can be used to recreate the instance.
         __del__() : prints a message when rectangle destroyed """
+    number_of_instances = 0
 
     def __init__(self, width=0, height=0):
         """
