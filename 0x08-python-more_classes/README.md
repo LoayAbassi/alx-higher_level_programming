@@ -21,3 +21,5 @@ class C_Name :
         ...code...
         C_Name.att1 += 1
 
+# static methods
+@staticmethod decorator
