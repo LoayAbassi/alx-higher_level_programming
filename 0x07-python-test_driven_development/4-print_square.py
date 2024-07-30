@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""    
+"""
 contains a function that prints
 a square using the # symbol
 """
