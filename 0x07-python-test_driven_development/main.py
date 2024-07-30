@@ -1,10 +1,8 @@
 #!/usr/bin/python3
 """ Doc """
 
-print_square = __import__('4-print_square').print_square
+matrix_divided = __import__('2-matrix_divided').matrix_divided
 
-try:
-    print_square(-2)
-except Exception as e:
-    print(e)
-
+matrix = [[3, 8], [12, 11]]
+print(matrix_divided(matrix, -3))
+print(matrix)

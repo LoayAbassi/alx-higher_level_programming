@@ -13,7 +13,6 @@ def matrix_divided(matrix, div):
     Returns:
     list: A new 2D list with each element divided by the given number.
     """
-
     if not isinstance(div, (int, float)):
         raise TypeError("div must be a number")
     if div == 0:
@@ -32,13 +31,9 @@ def matrix_divided(matrix, div):
                 raise TypeError(
                     "matrix must be a matrix (list of lists) of integers/floats")
 
-    for i in range(len(matrix)):
-        for j in range(len(matrix[0])):
-            matrix[i][j] = round(matrix[i][j] / div, 2)
-
-    return matrix
+    return [[round(element/div, 2) for element in row]for row in matrix]
 
 
-"""if __name__ =="__main__":
+if __name__ == "__main__":
     import doctest
-    doctest.testfile("tests/2-matrix_divided.txt")"""
+    doctest.testfile("tests/2-matrix_divided.txt")
