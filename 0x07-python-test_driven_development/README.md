@@ -38,6 +38,12 @@ if __name__ == '__main__':
     unittest.main()
 }
 
+# what unittest prints 
+passes and failures
+Number of tests run.
+Number of tests passed.
+Number of tests failed.
+Any errors or failure details.
 # example using docstring
 def add(a, b):
     """
@@ -64,6 +70,8 @@ test.txt
 5
 >>> add(-1, 1)
 0
+>>> my_function('string', 2)
+TypeError: argument must be an integer
 }
 
 main.py
@@ -73,3 +81,4 @@ import doctest
 if __name__ == "__main__":
     doctest.testfile("tests.txt")
 }
+
