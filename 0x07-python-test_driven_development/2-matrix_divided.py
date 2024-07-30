@@ -1,4 +1,8 @@
 #!/usr/bin/python3
+    """
+    module contains a function that devides a matrix's elements 
+    after checking for some specific conditions.
+    """
 def matrix_divided(matrix, div):
     """Divide each element of a matrix by a given number.
     Args:
