@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-    """
+"""
     module contains a function that devides a matrix's elements 
     after checking for some specific conditions.
     """
