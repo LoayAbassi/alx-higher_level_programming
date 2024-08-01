@@ -13,6 +13,15 @@ request module
 
 status code : 2
 
+retreiving data from api : 3
+
+counting from retreived object's data : 4
+
+fetching and restoring body of response in a file : 5
+
+fetching users the printing ones with completed tasks and number
+of tasks completed : 6
+
 
 
 

@@ -3,7 +3,7 @@
 const request = require('request');
 const url = process.argv[2];
 
-//not all parameters are required
+// not all parameters are required
 
 request(url, function (err, response, body) {
   if (err) {
