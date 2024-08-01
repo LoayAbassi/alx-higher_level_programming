@@ -7,6 +7,6 @@ request(endP, (err, response, body) => {
   if (err) {
     console.log(err);
   } else {
-    console.log(JSON.parse(body).results);
+    console.log(JSON.parse(body).title);
   }
 });
