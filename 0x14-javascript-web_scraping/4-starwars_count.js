@@ -14,7 +14,6 @@ request(api, (err, response, body) => {
     let characters = [];
     for (let i = 0; i < films.length; i++) {
       characters = films[i].characters;
-      console.log(characters);
 
       for (let j = 0; j < characters.length; j++) {
         if (characters[j].includes(wanted)) {
