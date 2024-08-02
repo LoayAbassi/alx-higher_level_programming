@@ -1,4 +1,4 @@
 -- shows groups having same score
 SELECT score, COUNT(score) AS "number"
 FROM second_table
-GROUP BY score desc;
+GROUP BY score DESC;
