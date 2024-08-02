@@ -1,2 +1,2 @@
---deletes database if it exists--
-delete database if not exists hbt
+-- deletes database if it exists
+drop database if not exists hbt
