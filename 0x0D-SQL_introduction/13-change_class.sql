@@ -1,3 +1,3 @@
 -- removes records with scores <= 5 
-delete from second_table 
-where score <= 5;
+DELETE FROM second_table
+WHERE score <= 5;
