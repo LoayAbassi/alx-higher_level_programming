@@ -1,5 +1,6 @@
 -- lists record of names and scores(base of order)
 --without counting names with no value
-select score,name from second_table
-where name is not null or name !=""
-order by score desc;
+SELECT score, name
+FROM second_table
+WHERE name IS NOT NULL AND name != ""
+ORDER BY score DESC;
