@@ -1,4 +1,4 @@
---lists all cities of calefornia
+-- lists all cities of calefornia
 SELECT id, name
 FROM cities
 WHERE state_id = (
